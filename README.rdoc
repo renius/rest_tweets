@@ -8,6 +8,7 @@ Things you may want to cover:
 
 * System dependencies
 redis
+postgresql
 
 * Database creation
 rake db:create
