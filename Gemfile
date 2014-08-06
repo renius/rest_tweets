@@ -19,6 +19,12 @@ gem 'quiet_assets'
 gem 'twitter'
 gem 'inherited_resources'
 gem 'thin'
+gem 'state_machine'
+gem 'sidekiq'
+gem 'sidetiq'
+gem 'sinatra', require: false
+gem 'pry'
+
 # Use jquery as the JavaScript library
 #gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
