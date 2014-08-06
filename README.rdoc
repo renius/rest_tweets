@@ -1,28 +1,29 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+принимает get /users/:id/tweets
+принимает post /users?user[name]=name
 
 Things you may want to cover:
 
-* Ruby version
 
 * System dependencies
-
-* Configuration
+redis
 
 * Database creation
+rake db:create
+rake db:migrate
 
 * Database initialization
-
-* How to run the test suite
+rake db:seed
 
 * Services (job queues, cache servers, search engines, etc.)
+foreman start
 
-* Deployment instructions
+* 4 ворккера основанных на классе Twc отвечающем за взаимодействиет с Twitter API
+определение, есть ли пользователь в твиттере
+инициатор загрузки твитов
+загрузка последник твитов
+загрузка ранних твитов
 
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* воркеры: фичи
+spawn воркеров поставлен на 20 секунд, чтобы успеть в логах отследить работу
